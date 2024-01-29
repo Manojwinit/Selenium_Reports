@@ -1,4 +1,79 @@
 Run testNG file usingCMD -  mvn test -DsuiteXmlFile=testng.xml
-
+manoj
 
 show duplicate dependencies using CMD - mvn dependency:analyze
+
+
+Git Commands:
+
+1. **Clone a Repository:**
+   
+   git clone <repository_url>
+   ```
+
+2. **Initialize a New Repository:-  git init
+   ```
+
+3. **Add Changes to the Staging Area:  - git add <file(s)>
+   ```
+
+4. **Commit Changes:**  - git commit -m "Your commit message"
+   ```
+
+5. **Check Status:**  - git status
+   ```
+
+6. **View Commit History:**  - git log
+   ```
+
+7. **Create a New Branch:**  - git branch <branch_name>
+   ```
+
+8. **Switch to a Branch:**  - git checkout <branch_name>
+   ```
+
+9. **Merge Branches:**  - git merge <branch_name>
+   ```
+
+10. **Pull Changes from a Remote Repository:**  -  git pull origin <branch_name>
+    ```
+
+11. **Push Changes to a Remote Repository:**  - git push origin <branch_name>
+    ```
+
+### Bash Commands:
+
+1. **Change Directory:**  - cd <directory_path>
+   ```
+
+2. **List Files and Directories:**  - ls
+   ```
+
+3. **Copy a File:**  -  cp <source_file> <destination_directory>
+   ```
+
+4. **Move/Rename a File:**  -  mv <old_file_name> <new_file_name>
+   ```
+
+5. **Remove/Delete a File:**  -  rm <file_name>
+   ```
+
+6. **Make a New Directory:**  -  mkdir <directory_name>
+   ```
+
+7. **Remove/Delete a Directory:**  - rmdir <directory_name>
+   ```
+
+8. **Print Working Directory:**  - pwd
+   ```
+
+9. **Clear the Console:**  - clear
+   ```
+
+10. **Open a File in a Text Editor:**  - nano <file_name>
+    ```
+
+These commands are commonly used in Git and Bash. 
+Replace placeholders like `<repository_url>`, `<file(s)>`, `<branch_name>`, etc., 
+with the actual values or paths you are working with. If you need more information about a specific command,
+ you can use the `--help` option, for example, `git --help` or `ls --help`.

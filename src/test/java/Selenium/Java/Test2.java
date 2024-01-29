@@ -2,8 +2,6 @@ package Selenium.Java;
 
 import org.testng.annotations.Test;
 
-import PageObjects.HomePage;
-import PageObjects.LoginPage;
 import PageObjects.UsersPage;
 import testSetup.Base;
 

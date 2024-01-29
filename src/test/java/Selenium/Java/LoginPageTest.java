@@ -1,10 +1,12 @@
 package Selenium.Java;
 
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
+
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
 import testSetup.Base;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.Test;
 
 public class LoginPageTest extends Base {
 	LoginPage loginPage;

@@ -1,10 +1,5 @@
 package testSetup;
 
-import PageObjects.LoginPage;
-import driverManagerFactory.DriverManager;
-import driverManagerFactory.DriverManagerFactory;
-import driverManagerFactory.DriverType;
-
 import java.io.File;
 import java.io.IOException;
 
@@ -14,6 +9,11 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
+import PageObjects.LoginPage;
+import driverManagerFactory.DriverManager;
+import driverManagerFactory.DriverManagerFactory;
+import driverManagerFactory.DriverType;
 
 public class Base {
 
@@ -36,7 +36,7 @@ public class Base {
 	public String getScreenShotPath(String testMethodName,WebDriver driver) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		String destinationFile = System.getProperty("User	.dir") + "\\reports\\" + testMethodName + ".png";
+		String destinationFile = System.getProperty("User.dir") + "\\reports\\" + testMethodName + ".png";
 		FileUtils.copyFile(source, new File(destinationFile));
 		return destinationFile;
 	}

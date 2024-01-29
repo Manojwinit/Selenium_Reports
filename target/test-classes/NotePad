@@ -1,4 +1,0 @@
-Run testNG file usingCMD -  mvn test -DsuiteXmlFile=testng.xml
-
-
-show duplicate dependencies using CMD - mvn dependency:analyze

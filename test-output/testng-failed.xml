@@ -4,17 +4,6 @@
   <listeners>
     <listener class-name="Selenium.Java.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Valid Login User(failed)">
-    <classes>
-      <class name="Selenium.Java.Test1">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="user"/>
-        </methods>
-      </class> <!-- Selenium.Java.Test1 -->
-    </classes>
-  </test> <!-- Valid Login User(failed) -->
   <test thread-count="5" parallel="tests" name="Invalid login user(failed)">
     <classes>
       <class name="Selenium.Java.Test2">

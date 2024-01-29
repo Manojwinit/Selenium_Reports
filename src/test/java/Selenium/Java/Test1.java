@@ -12,7 +12,6 @@ public class Test1 extends Base {
 
 		UsersPage u = new UsersPage();
 		u.NavigateToUsers();
-
 	}
 
 }
