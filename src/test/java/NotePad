@@ -1,7 +1,15 @@
 Run testNG file usingCMD -  mvn test -DsuiteXmlFile=testng.xml
-manoj
+
 
 show duplicate dependencies using CMD - mvn dependency:analyze
+
+
+Commit and push:
+git status
+git add .
+git commit -m "msg 1"
+git push origin Stable1
+
 
 
 Git Commands:

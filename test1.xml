@@ -2,17 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="tests">
 	<listeners>
-		<listener class-name="Selenium.Java.Listeners"></listener>
+		<listener class-name="tests.Listeners"></listener>
 	</listeners>
 	<test name="Valid Login User">
 		<classes>
-			<class name="Selenium.Java.LoginPageTest" />
+			<class name="tests.LoginPageTest" />
 		</classes>
 	</test>
 
 	<test name="Invalid login user">
 		<classes>
-			<class name="Selenium.Java.Test2"></class>
+			<class name="tests.Test2"></class>
 		</classes>
 	</test>
 

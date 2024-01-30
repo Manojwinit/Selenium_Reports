@@ -1,4 +1,4 @@
-package Selenium.Java;
+package tests;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -9,8 +9,8 @@ public class ExternalReporter {
 	public static ExtentReports getReportsObject() {
 		String path = System.getProperty("user.dir") + "\\reports\\index.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
-		reporter.config().setReportName("Web Automation");
-		reporter.config().setDocumentTitle("Test Results");
+		reporter.config().setReportName("Web Automation Framework");
+		reporter.config().setDocumentTitle("Test Report Results");
 
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);

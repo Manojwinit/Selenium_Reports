@@ -17,11 +17,11 @@ import driverManagerFactory.DriverType;
 
 public class Base {
 
-	public static WebDriver driver;
-	DriverManager driverManager;
-	LoginPage loginPage;
+    public static WebDriver driver;
+    DriverManager driverManager;
+    LoginPage loginPage;
 
-	@BeforeClass
+    @BeforeClass
 	public void setup() throws InterruptedException {
 		System.out.println("Setting up the test environment...");
 		driverManager = DriverManagerFactory.getDriveManager(DriverType.CHROME);
@@ -33,19 +33,22 @@ public class Base {
 		loginPage.Validlogin("ksaadmin", "1234");
 	}
 
-	public String getScreenShotPath(String testMethodName,WebDriver driver) throws IOException {
+	public String getScreenShotPath(String testMethodName, WebDriver driver) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		String destinationFile = System.getProperty("User.dir") + "\\reports\\" + testMethodName + ".png";
+		// String destinationFile = System.getProperty("user.dir") + "\\reports\\"// +testMethodName + ".png";
+		String destinationFile = 
+		System.getProperty("C:\\Users\\winit\\git\\Selenium_Reports\\reports") + File.separator+ testMethodName + ".png";
+		// = System.getProperty("user.dir") + File.separator + "reports" +
+		// File.separator+ testMethodName + ".png";
 		FileUtils.copyFile(source, new File(destinationFile));
 		return destinationFile;
 	}
 
-	@AfterClass
-	public void tearDown() {
-		if (driver != null) {
-			// driver.quit();
-		}
-	}
-
+    @AfterClass
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }

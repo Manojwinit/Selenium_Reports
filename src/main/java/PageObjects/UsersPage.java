@@ -12,7 +12,7 @@ public class UsersPage extends Base {
     By AdmistritaionMenu = By.id("ancSfaAdministration");
     By UsersLink = By.linkText("Users");
 
-    By AddNew = By.id("cphContent_lnkAddNew");
+    By AddNew = By.id("cphContent_lnkAddNeww");
 
     By SelectUser = By.xpath("//span[contains(text(),'Select UserType')]");
     By TypeUser = By.xpath("(//input[@placeholder='Enter keywords'])[6]");

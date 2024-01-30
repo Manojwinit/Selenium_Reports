@@ -6,6 +6,7 @@ import TestUtils.WaitUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+
 public class LoginPage extends Base {
 
     private By userNameTextBox = By.cssSelector("input#txtUsername");
@@ -27,7 +28,7 @@ public class LoginPage extends Base {
 
         String InvalidLogin = BrowserActions.GetText(InvalidLoginError).toString();
 //        Assert.assertTrue(InvalidLogin.contains("Invalid"), InvalidLogin);
-        System.out.println(InvalidLoginError);
+        System.out.println(InvalidLogin);
     }
 
     public void setUserNameAndPassword(String userName, String password) {

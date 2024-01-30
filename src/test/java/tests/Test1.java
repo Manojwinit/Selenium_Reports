@@ -1,12 +1,11 @@
-package Selenium.Java;
+package tests;
 
 import org.testng.annotations.Test;
 
 import PageObjects.UsersPage;
 import testSetup.Base;
 
-public class Test2 extends Base {
-
+public class Test1 extends Base {
 	@Test
 	public void user() {
 
